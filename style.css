@@ -2,6 +2,11 @@ html {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p {
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+
 .navbar {
   position: absolute;
   top: 0;
@@ -334,4 +339,8 @@ html {
 
 .h1 small {
   font-size: 24px;
+}
+
+.contact-form {
+  background-image: url(map.jpg);
 }
