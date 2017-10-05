@@ -2,486 +2,399 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap website</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-                <a class="navbar-brand" href="#">CodeMasters</a>
-                <button type="button" class="btn btn-default navbar-btn btn-success fp-buttons" data-toggle="modal" data-target="#signin">Log in</button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#About">About us</a></li>
-                    <li><a href="#Team">Our Team</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Courses<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#Courses">JavaScript frameworks</a></li>
-                            <li><a href="#Courses">C# & .Net 101</a></li>
-                            <li><a href="#Courses">Java Esentials</a></li>
-                            <li><a href="#Courses">Python 4 noobz</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Prices">Pricing</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- signin modal -->
-    <div id="signin" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <!-- tutaj umieszczamy zawartość-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="panel panel-login">
-                                <div class="panel-heading">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <a href="#" class="active" id="login-form-link">Login</a>
-                                        </div>
-
-                                    </div>
-                                    <hr>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <form id="login-form" action="#" method="post" role="form" style="display: block;">
-                                                <div class="form-group">
-                                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                                                </div>
-                                                <div class="form-group text-center">
-                                                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                                                    <label for="remember"> Remember Me</label>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-sm-6 col-sm-offset-3">
-                                                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success fp-buttons" value="Log In">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--carousel-->
-    <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="slide1"></div>
-            </div>
-            <div class="item">
-                <div class="slide2"></div>
-            </div>
-            <div class="item">
-                <div class="slide3"></div>
-            </div>
-        </div>
-        <!-- .carousel-inner -->
-        <div class="container carousel-overlay text-center">
-            <h1>Get Best Programming Training</h1>
-            <p class="lead">One-on-one mentoring availiable. Check out our pricing.</p>
-            <a class="btn btn-lg btn-success fp-buttons" href="#Prices">
-                <span class="fa fa-dollar"></span> Get Pricing
-            </a>
-            <a class="btn btn-lg btn-success fp-buttons" href="#">
-                <span class="fa fa-check"></span> Sign Up
-            </a>
-        </div>
-    </div>
-    <!-- .carousel -->
-    <!--end bg-carousel-->
-
-    <!-- about us -->
-    <div class="container-fluid about text-center" id="About">
-        <h1 class="h1">Our Coding Bootcamps Guarantees Best Quality</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <h4>Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque.
-                    Nunc a leo non lacus. Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing
-                    ac, eleifend et, neque. Nunc a leo non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur
-                    sed nunc. Donec ipsum scelerisque nulla vitae quam. </p>
-                <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque.
-                    Nunc a leo non lacus. Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing
-                    ac, eleifend et, neque. Nunc a leo non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur
-                    sed nunc. Donec ipsum scelerisque nulla vitae quam. </p>
-            </div>
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque.
-                    Nunc a leo non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur sed nunc. Donec ipsum scelerisque
-                    nulla vitae quam. Pellentesque ornare ornare. Maecenas eu lorem. Nam varius ac, eleifend mi, rutrum nulla,
-                    at tellus. Nunc non enim. Cras nonummy sed, congue quis, lacinia eget, nonummy eget, sagittis lacus sagittis
-                    odio non mi ligula, egestas quis, wisi. Vivamus sem vestibulum tincidunt congue. Praesent nec turpis
-                    mauris mattis neque. Praesent tristique congue. Donec nisl felis sollicitudin quis, lacinia ut, sagittis
-                    luctus, quam nunc, tempus ornare at, mollis ac, euismod id, libero. Vestibulum vulputate. Morbi mauris
-                    consequat pharetra. Suspendisse sapien. Etiam ac orci ut wisi. Phasellus a leo semper lobortis. In nunc
-                    ut nulla mi, eu justo. Nulla mi non mattis lorem lorem sit amet, est. Lorem ipsum quis massa volutpat
-                    ante, sagittis eget, tincidunt in, adipiscing elit. Aenean ullamcorper massa quis placerat eget, cursus
-                    arcu iaculis ut, eros. Aliquam nisl. Nam ut magna. Nulla imperdiet convallis. Suspendisse potenti. Quisque
-                    vehicula libero. Duis elementum vitae, ullamcorper.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid technology">
-        <div class="row">
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/226/226777.svg" class="img-responsive" alt="..."></div>
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/358/358879.svg" class="img-responsive" alt="..."></div>
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/174/174854.svg" class="img-responsive" alt="..."></div>
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/528/528255.svg" class="img-responsive" alt="..."></div>
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/461/461010.svg" class="img-responsive" alt="..."></div>
-            <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/2/2181.svg" class="img-responsive" alt="..."></div>
-
-        </div>
-    </div>
-
-    <!-- team members -->
-    <div class="container-fluid team text-center" id="Team">
-        <h1 class="h1">Meet mentors in one-on-one sessions</h1>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://static.pexels.com/photos/428339/pexels-photo-428339.jpeg" class="img-rounded" alt="...">
-                    <div class="caption">
-                        <h3>Andrew Golota</h3>
-                        <p>Java Developer</p>
-                        <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://static.pexels.com/photos/428341/pexels-photo-428341.jpeg" class="img-rounded" alt="...">
-                    <div class="caption">
-                        <h3>Stevie Wonder</h3>
-                        <p>FrontEnd Developer</p>
-                        <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://static.pexels.com/photos/450214/pexels-photo-450214.jpeg" class="img-rounded" alt="...">
-                    <div class="caption">
-                        <h3>Jackie Chan</h3>
-                        <p>.Net & C# Developer</p>
-                        <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <img src="https://static.pexels.com/photos/325531/pexels-photo-325531.jpeg" class="img-rounded" alt="...">
-                    <div class="caption">
-                        <h3>Dorothy</h3>
-                        <p>Python Developer</p>
-                        <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- courses info -->
-    <div class="container-fluid courses" id="Courses">
-        <h1 class="h1 text-center">Our Courses Info!</h1>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#javascript" aria-controls="javascript" role="tab" data-toggle="tab">JavaScript Frameworks</a></li>
-            <li role="presentation"><a href="#csharp" aria-controls="csharp" role="tab" data-toggle="tab">C# & .Net 101</a></li>
-            <li role="presentation"><a href="#java" aria-controls="java" role="tab" data-toggle="tab">Java Essentials</a></li>
-            <li role="presentation"><a href="#python" aria-controls="python" role="tab" data-toggle="tab">Python 4 Noobz</a></li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active " id="javascript">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="csharp">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="java">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="python">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
-                        <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus
-                            sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                            Pharetra sit amet aliquam id diam maecenas ultricies. Ultricies mi eget mauris pharetra et ultrices.
-                            Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non
-                            consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a
-                            scelerisque purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- prices -->
-    <div class="container-fluid prices table-responsive" id="Prices">
-        <h1 class="h1 text-center">Low Price For Great Courses</h1>
-        <table class="table table-hover text-uppercase">
-            <thead>
-                <tr class="danger">
-                    <th>Course name</th>
-                    <th>Time</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>JavaScript Frameworks</td>
-                    <td>3 months</td>
-                    <td>$3500</td>
-                </tr>
-                <tr>
-                    <td>C# & .Net 101</td>
-                    <td>3 months</td>
-                    <td>$3000</td>
-                </tr>
-                <tr>
-                    <td>Java Essentials</td>
-                    <td>3 months</td>
-                    <td>$3500</td>
-                </tr>
-                <tr>
-                    <td>Python 4 Noobz</td>
-                    <td>3 months</td>
-                    <td>$3500</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    </div>
-
-    <!-- contant -->
-    <div class="jumbotron jumbotron-sm text-center" id="Contact">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <h1 class="h1">
-                        Contact us <small>Feel free to ask about our courses</small></h1>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="well well-sm">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">
-                                Email Address</label>
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                        </span>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="subject">
-                                Subject</label>
-                                    <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Choose One:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
-                            </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="name">
-                                Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-success pull-right" id="btnContactUs">
-                            Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <form>
-                    <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
-                    <address>
-                        <strong>CodeMasters, Inc.</strong><br> 15 St Margarets Lane
-                        <br> New York, NY 10033<br>
-                        <abbr title="Phone">
-                    P:</abbr> (123) 111-2222-333
-                    </address>
-                    <address>
-                        <strong>Full Name</strong><br>
-                        <a href="mailto:#">first.last@example.com</a>
-                    </address>
-                </form>
-            </div>
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand" href="#">CodeMasters</a>
+        <button type="button" class="btn btn-default navbar-btn btn-success fp-buttons" data-toggle="modal" data-target="#signin">Log in</button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#About">About us</a></li>
+          <li><a href="#Team">Our Team</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Courses<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#Courses">JavaScript frameworks</a></li>
+              <li><a href="#Courses">C# & .Net 101</a></li>
+              <li><a href="#Courses">Java Esentials</a></li>
+              <li><a href="#Courses">Python 4 noobz</a></li>
+            </ul>
+          </li>
+          <li><a href="#Prices">Pricing</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+  <!-- signin modal -->
+  <div id="signin" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel panel-login">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <a href="#" class="active" id="login-form-link">Login</a>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                        <div class="form-group">
+                          <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group text-center">
+                          <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                          <label for="remember"> Remember Me</label>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                              <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success fp-buttons" value="Log In">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--carousel-->
+  <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1"></div>
+      </div>
+      <div class="item">
+        <div class="slide2"></div>
+      </div>
+      <div class="item">
+        <div class="slide3"></div>
+      </div>
+    </div>
+    <div class="container carousel-overlay text-center">
+      <h1>Get Best Programming Training</h1>
+      <p class="lead">One-on-one mentoring availiable. Check out our pricing.</p>
+      <a class="btn btn-lg btn-success fp-buttons" href="#Prices"> <span class="fa fa-dollar"></span> Get Pricing</a>
+      <a class="btn btn-lg btn-success fp-buttons" href="#"><span class="fa fa-check"></span>Sign Up</a>
+    </div>
+  </div>
+
+
+  <!-- about us -->
+  <div class="container-fluid about text-center" id="About">
+    <h1 class="h1">Our Coding Bootcamps Guarantees Best Quality</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Lorem ipsum dolor, Lorem ipsum dolor</h4>
+        <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque. Nunc a leo non lacus. Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque. Nunc a leo
+          non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur sed nunc. Donec ipsum scelerisque nulla vitae quam. </p>
+        <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque. Nunc a leo non lacus. Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque. Nunc a leo
+          non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur sed nunc. Donec ipsum scelerisque nulla vitae quam. </p>
+      </div>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet augue eget est porta sit amet, consectetuer adipiscing ac, eleifend et, neque. Nunc a leo non lacus. In fermentum. Aliquam fermentum consectetuer. Curabitur sed nunc. Donec ipsum scelerisque nulla vitae quam. Pellentesque
+          ornare ornare. Maecenas eu lorem. Nam varius ac, eleifend mi, rutrum nulla, at tellus. Nunc non enim. Cras nonummy sed, congue quis, lacinia eget, nonummy eget, sagittis lacus sagittis odio non mi ligula, egestas quis, wisi. Vivamus sem vestibulum
+          tincidunt congue. Praesent nec turpis mauris mattis neque. Praesent tristique congue. Donec nisl felis sollicitudin quis, lacinia ut, sagittis luctus, quam nunc, tempus ornare at, mollis ac, euismod id, libero. Vestibulum vulputate. Morbi mauris
+          consequat pharetra. Suspendisse sapien. Etiam ac orci ut wisi. Phasellus a leo semper lobortis. In nunc ut nulla mi, eu justo. Nulla mi non mattis lorem lorem sit amet, est. Lorem ipsum quis massa volutpat ante, sagittis eget, tincidunt in,
+          adipiscing elit. Aenean ullamcorper massa quis placerat eget, cursus arcu iaculis ut, eros. Aliquam nisl. Nam ut magna. Nulla imperdiet convallis. Suspendisse potenti. Quisque vehicula libero. Duis elementum vitae, ullamcorper.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid technology">
+    <div class="row">
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/226/226777.svg" class="img-responsive" alt="..."></div>
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/358/358879.svg" class="img-responsive" alt="..."></div>
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/174/174854.svg" class="img-responsive" alt="..."></div>
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/528/528255.svg" class="img-responsive" alt="..."></div>
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/461/461010.svg" class="img-responsive" alt="..."></div>
+      <div class="col-md-2"><img src="https://image.flaticon.com/icons/svg/2/2181.svg" class="img-responsive" alt="..."></div>
+    </div>
+  </div>
+
+  <!-- team members -->
+  <div class="container-fluid team text-center" id="Team">
+    <h1 class="h1">Meet mentors in one-on-one sessions</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <img src="https://static.pexels.com/photos/428339/pexels-photo-428339.jpeg" class="img-rounded" alt="...">
+          <div class="caption">
+            <h3>Andrew Golota</h3>
+            <p>Java Developer</p>
+            <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <img src="https://static.pexels.com/photos/428341/pexels-photo-428341.jpeg" class="img-rounded" alt="...">
+          <div class="caption">
+            <h3>Stevie Wonder</h3>
+            <p>FrontEnd Developer</p>
+            <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <img src="https://static.pexels.com/photos/450214/pexels-photo-450214.jpeg" class="img-rounded" alt="...">
+          <div class="caption">
+            <h3>Jackie Chan</h3>
+            <p>.Net & C# Developer</p>
+            <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <img src="https://static.pexels.com/photos/325531/pexels-photo-325531.jpeg" class="img-rounded" alt="...">
+          <div class="caption">
+            <h3>Dorothy</h3>
+            <p>Python Developer</p>
+            <p><a href="#" class="btn btn-primary btn-success fp-buttons" role="button">learn more</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- courses info -->
+  <div class="container-fluid courses" id="Courses">
+    <h1 class="h1 text-center">Our Courses Info!</h1>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#javascript" aria-controls="javascript" role="tab" data-toggle="tab">JavaScript Frameworks</a></li>
+      <li role="presentation"><a href="#csharp" aria-controls="csharp" role="tab" data-toggle="tab">C# & .Net 101</a></li>
+      <li role="presentation"><a href="#java" aria-controls="java" role="tab" data-toggle="tab">Java Essentials</a></li>
+      <li role="presentation"><a href="#python" aria-controls="python" role="tab" data-toggle="tab">Python 4 Noobz</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active " id="javascript">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="csharp">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="java">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="python">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <h4 class="text-center">Lorem ipsum dolor, Lorem ipsum dolor</h4>
+            <p>Aliquet nec ullamcorper sit amet risus nullam eget felis. Platea dictumst quisque sagittis purus sit amet. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Pharetra sit amet aliquam id diam maecenas ultricies.
+              Ultricies mi eget mauris pharetra et ultrices. Erat nam at lectus urna duis convallis convallis. Etiam erat velit scelerisque in dictum non consectetur a. Ac feugiat sed lectus vestibulum mattis ullamcorper. Ultrices sagittis orci a scelerisque
+              purus semper eget. Pretium viverra suspendisse potenti nullam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- prices -->
+  <div class="container-fluid prices table-responsive" id="Prices">
+    <h1 class="h1 text-center">Low Price For Great Courses</h1>
+    <table class="table table-hover text-uppercase">
+      <thead>
+        <tr class="danger">
+          <th>Course name</th>
+          <th>Time</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>JavaScript Frameworks</td>
+          <td>3 months</td>
+          <td>$3500</td>
+        </tr>
+        <tr>
+          <td>C# & .Net 101</td>
+          <td>3 months</td>
+          <td>$3000</td>
+        </tr>
+        <tr>
+          <td>Java Essentials</td>
+          <td>3 months</td>
+          <td>$3500</td>
+        </tr>
+        <tr>
+          <td>Python 4 Noobz</td>
+          <td>3 months</td>
+          <td>$3500</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <!-- contact -->
+  <div class="jumbotron jumbotron-sm text-center" id="Contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12">
+          <h1 class="h1">
+            Contact us <small>Feel free to ask about our courses</small></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="well well-sm">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" class="form-control" required="required">
+<option value="na" selected="">Choose One:</option>
+<option value="service">General Customer Service</option>
+<option value="suggestions">Suggestions</option>
+<option value="product">Product Support</option>
+ </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name"> Message</label>
+                  <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-success pull-right" id="btnContactUs">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <form>
+          <legend><span class="glyphicon glyphicon-globe"></span>Our office</legend>
+          <address> <strong>CodeMasters, Inc.</strong><br> 15 St Margarets Lane<br> New York, NY 10033<br><abbr title="Phone">
+P:</abbr>(123) 111-2222-333</address>
+          <address><strong>Full Name</strong><br><a href="mailto:#">first.last@example.com</a>
+</address>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
