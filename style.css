@@ -341,9 +341,9 @@ p {
   font-size: 24px;
 }
 
-.tooltip .tooltip-inner {
-  background-color:#2fa5fb;
-}
-.tooltip.left > .tooltip-arrow {
- border-left-color: #2fa5fb;
+
+@media only screen and (max-width: 768px) {
+  .footer {
+     text-align: center;
+  }
 }
